@@ -8,5 +8,8 @@
     "source.organizeImports": true
   },
   "headwind.runOnSave": false,
-  "cSpell.words": ["clsx", "nextjs", "prefetch", "signin"]
+  "cSpell.words": ["clsx", "nextjs", "prefetch", "signin"],
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  }
 }
