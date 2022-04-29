@@ -8,5 +8,5 @@
     "source.organizeImports": true
   },
   "headwind.runOnSave": false,
-  "cSpell.words": ["signin"]
+  "cSpell.words": ["clsx", "nextjs", "prefetch", "signin"]
 }
