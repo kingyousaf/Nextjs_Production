@@ -1,7 +1,7 @@
-import Head from 'next/head';
-import { useRouter } from 'next/router';
+import Head from 'next/head'
+import { useRouter } from 'next/router'
 
-import { openGraph } from '@/lib/helper';
+import { openGraph } from '@/lib/helper'
 
 // !STARTERCONF Change these default meta
 const defaultMeta = {
@@ -15,22 +15,22 @@ const defaultMeta = {
   robots: 'follow, index',
   /** No need to be filled, will be populated with openGraph function */
   image: '',
-};
+}
 
 type SeoProps = {
-  date?: string;
-  templateTitle?: string;
-} & Partial<typeof defaultMeta>;
+  date?: string
+  templateTitle?: string
+} & Partial<typeof defaultMeta>
 
 export default function Seo(props: SeoProps) {
-  const router = useRouter();
+  const router = useRouter()
   const meta = {
     ...defaultMeta,
     ...props,
-  };
+  }
   meta['title'] = props.templateTitle
     ? `${props.templateTitle} | ${meta.siteName}`
-    : meta.title;
+    : meta.title
 
   // Use siteName if there is templateTitle
   // but show full title if there is none
@@ -38,7 +38,7 @@ export default function Seo(props: SeoProps) {
     description: meta.description,
     siteName: props.templateTitle ? meta.siteName : meta.title,
     templateTitle: props.templateTitle,
-  });
+  })
 
   return (
     <Head>
@@ -86,15 +86,15 @@ export default function Seo(props: SeoProps) {
       />
       <meta name='theme-color' content='#ffffff' />
     </Head>
-  );
+  )
 }
 
 type Favicons = {
-  rel: string;
-  href: string;
-  sizes?: string;
-  type?: string;
-};
+  rel: string
+  href: string
+  sizes?: string
+  type?: string
+}
 
 // !STARTERCONF this is the default favicon, you can generate your own from https://www.favicon-generator.org/ then replace the whole /public/favicon folder
 const favicons: Array<Favicons> = [
@@ -171,4 +171,4 @@ const favicons: Array<Favicons> = [
     rel: 'manifest',
     href: '/favicon/manifest.json',
   },
-];
+]

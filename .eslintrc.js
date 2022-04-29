@@ -13,7 +13,7 @@ module.exports = {
     'prettier',
   ],
   rules: {
-    'no-unused-vars': 'off',
+    'no-unused-vars': [1, { args: 'after-used', argsIgnorePattern: '^_' }],
     'no-console': 'warn',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
 
@@ -77,7 +77,7 @@ module.exports = {
     //#endregion  //*======== Import Sort ===========
   },
   globals: {
-    React: true,
+    React: 'readonly',
     JSX: true,
   },
-};
+}
