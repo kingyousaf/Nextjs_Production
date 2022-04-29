@@ -7,5 +7,6 @@
     "source.fixAll": true,
     "source.organizeImports": true
   },
-  "headwind.runOnSave": false
+  "headwind.runOnSave": false,
+  "cSpell.words": ["signin"]
 }
