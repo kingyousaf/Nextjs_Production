@@ -1,8 +1,8 @@
-# Features 
+# Features
 
 - ⚛️ React 17
 - ✨ TypeScript
-- 💨 Tailwind CSS 
+- 💨 Tailwind CSS
 - - 🏝 MUI - Component library
 - 🗝 Next Authentication
 - 🃏 Jest — Configured for unit testing
