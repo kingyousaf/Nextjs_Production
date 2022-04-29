@@ -5,7 +5,7 @@
 - 💨 Tailwind CSS
 - - 🏝 MUI - Component library
 - 🗝 Next Authentication
-- 💿 Planet Scale set up guide 
+- 💿 Planet Scale set up guide
 - 🃏 Jest — Configured for unit testing
 - 📈 Absolute Import and Path Alias — Import components using @/ prefix
 - 📏 ESLint — Find and fix problems in your code, also will auto sort your imports
@@ -20,24 +20,25 @@
 - 🗺 Site Map — Automatically generate sitemap.xml
 - 📦 Expansion Pack — Easily install common libraries, additional components, and configs
 
-
-
-# Setting up Prisma with Planet Scale 
+# Setting up Prisma with Planet Scale
 
 Starter docs [example](https://github.com/planetscale/nextjs-starter)
 
-- First hve the PlanetScale cli [installed](https://planetscale.com/cli) 
-- Then sign in to your account from the terminal ```bash pscale auth login```
+- First hve the PlanetScale cli [installed](https://planetscale.com/cli)
+- Then sign in to your account from the terminal `bash pscale auth login`
 
 ## Creating a database
+
 - This can be done from either the `terminal` or `dashboard` over at planetScale
 
-### Terminal 
-- Run ```bash pscale database create nameOfDatabase```
+### Terminal
+
+- Run `bash pscale database create nameOfDatabase`
 
 #### Password create
-- run ```bash pscale password create nameOfDatabase main nameOfPassword```
-- Then you will get the info that you need to put in the `DATABASE_URL` IN THE `.env` file 
+
+- run `bash pscale password create nameOfDatabase main nameOfPassword`
+- Then you will get the info that you need to put in the `DATABASE_URL` IN THE `.env` file
 - Use the info given and replace it into this removing the `<>` after putting each one in
 
 `.env` url string
@@ -47,15 +48,16 @@ DATABASE_URL=mysql://<USERNAME>:<PLAIN_TEXT_PASSWORD>@<ACCESS_HOST_URL>/<DATABAS
 ```
 
 # Connecting to the database
-- To connect to it you need the password 
+
+- To connect to it you need the password
 - This can be done through the terminal or on the dashboard
 
-# Pushing the prisma model to planetScale 
+# Pushing the prisma model to planetScale
 
-- After following the steps above and making your prisma models run 
-- ```bash npx prisma db push```
+- After following the steps above and making your prisma models run
+- `bash npx prisma db push`
 
-# Deploying to production 
+# Deploying to production
 
 - Go to planet scale project
 - Then promote the main branch to production
